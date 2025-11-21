@@ -1,4 +1,4 @@
-#Projet de développement: Jeux de divertissement
+# Projet de développement: Jeux de divertissement
 
 Notre Projet c'est la création de trois jeux pour le divertissement et plaisir des gens.
 
