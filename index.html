@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil des Jeux</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    .games-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .game-card {
+      background: #fff;
+      color: #333;
+      width: 200px;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .game-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .game-card img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .game-card p {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .game-card button {
+      background: #2575fc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .game-card button:hover {
+      background: #6a11cb;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Bienvenue à Nos Jeux</h1>
+  <div class="games-container">
+    <div class="game-card">
+      <img src="tic-tac-toe.gif" alt="Morpion">
+      <p>Morpion</p>
+      <button onclick="location.href='tictactoe.html'">Jouer</button>
+    </div>
+    <div class="game-card">
+      <img src="table-tennis.gif" alt="Ping Pong">
+      <p>Ping Pong</p>
+      <button onclick="location.href='pingpong.html'">Jouer</button>
+    </div>
+    <div class="game-card">
+      <img src="ouroboros.gif" alt="Serpent">
+      <p>Serpent</p>
+      <button onclick="location.href='snake.html'">Jouer</button>
+    
+    </div>
+  </div>
+  
+
+</body>
+</html>

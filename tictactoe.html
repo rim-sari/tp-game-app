@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Tic-Tac-Toe</title>
+</head>
+<body>
+  <h1>Morpion</h1>
+  
+  <div id="scores" class="hidden"></div>
+  
+  <div class="player-inputs">
+    <div id="error-message" class="error-message hidden">
+      Entrez les noms des joueurs et appuyez sur démarrer
+    </div>
+    <label for="player1">Nom du Joueur 1 (X) :</label>
+    <input type="text" id="player1" placeholder="Entrez le nom du joueur 1">
+    <label for="player2">Nom du Joueur 2 (O) :</label>
+    <input type="text" id="player2" placeholder="Entrez le nom du joueur 2">
+    <button id="startButton">Démarrer le Jeu</button>
+  </div>
+
+  <div class="board hidden" id="board">
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+  </div>
+
+
+  <div class="winning-message hidden" id="winningMessage">
+    <div id="winningMessageText"></div>
+
+    <button id=restartbutton class="btn-17">
+      <span class="text-container">
+        <span class="text">RESTART</span>
+      </span>
+  </button>  
+  </div>
+
+  <div id="overlay" class="hidden"></div>
+
+  <div id="globalWinningMessage" class="winning-message hidden">
+    <div id="globalWinningMessageText">Joueur X a gagné !</div>
+    <button id="globalRestartButton">Rejouer</button>
+  </div>  
+  
+  <button class="back-button" onclick="location.href='index.html'">Retour à l'accueil</button>
+
+</body>
+</html>
